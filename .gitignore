@@ -4,6 +4,9 @@
 /data.backups/
 /applications/
 
+# Internal developer docs — keep local, not for the public repo.
+/Doc/Velae_Lite_Development_Plan.docx
+
 # Claude Code local settings (machine-specific)
 /.claude/
 
