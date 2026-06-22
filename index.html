@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velae Lite</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'%3E%3Cpath d='M36 4 L39.5 32.5 L68 36 L39.5 39.5 L36 68 L32.5 39.5 L4 36 L32.5 32.5 Z' fill='%237c4a30'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="Core/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Left rail -->
+    <aside class="rail">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 72 72" width="26" height="26"><path d="M36 4 L39.5 32.5 L68 36 L39.5 39.5 L36 68 L32.5 39.5 L4 36 L32.5 32.5 Z" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-name">Ve<em>lae</em></span>
+      </div>
+      <div class="brand-sub" id="appVersion">Lite</div>
+
+      <nav class="nav" id="nav">
+        <button class="nav-item is-active" data-view="dashboard">Dashboard</button>
+        <button class="nav-item" data-view="applications">Applications</button>
+        <button class="nav-item" data-view="pipeline">Pipeline</button>
+        <button class="nav-item" data-view="companies">Companies</button>
+        <button class="nav-item" data-view="tailor">Tailor</button>
+        <button class="nav-item" data-view="profile">Profile</button>
+        <button class="nav-item" data-view="settings">Settings</button>
+      </nav>
+
+      <div class="rail-foot">
+        <!-- Wax-seal save indicator: the signature element -->
+        <button class="seal" id="seal" title="Save status">
+          <span class="seal-dot"></span>
+          <span class="seal-label" id="sealLabel">No folder</span>
+        </button>
+        <div class="rail-actions">
+          <button class="btn btn-quiet" id="btnConnect">Connect folder</button>
+          <button class="btn btn-quiet" id="btnSave">Save</button>
+          <button class="btn btn-quiet" id="btnLoad">Load file</button>
+        </div>
+        <p class="storage-note" id="storageNote">Detecting browser…</p>
+        <input type="file" id="fileInput" accept="application/json" hidden />
+      </div>
+    </aside>
+
+    <!-- Work area -->
+    <main class="work" id="work">
+      <header class="work-head">
+        <h1 class="work-title" id="viewTitle">Dashboard</h1>
+        <p class="work-sub" id="viewSub">An at-a-glance read of your search.</p>
+      </header>
+      <section class="work-body" id="viewBody"><!-- views render here --></section>
+    </main>
+  </div>
+
+  <div id="modalHost"></div>
+
+  <!-- vendored libraries (offline, portable) -->
+  <script src="Core/vendor/mammoth.browser.min.js"></script>
+  <script src="Core/vendor/docx.umd.js"></script>
+  <script src="Core/vendor/jszip.min.js"></script>
+  <!-- pdf.js classic (UMD) build: ESM import() can't load from file://, so we
+       use the script-tag build. The worker script registers window.pdfjsWorker
+       for the main-thread fake worker (Workers can't spawn from file:// either). -->
+  <script src="Core/vendor/pdf.min.js"></script>
+  <script src="Core/vendor/pdf.worker.min.js"></script>
+  <script src="Core/app.js"></script>
+</body>
+</html>

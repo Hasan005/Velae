@@ -1,0 +1,13 @@
+# Personal data — never commit (see Doc/architecture.md §5, §10 invariant #2)
+/data.json
+/config.json
+/data.backups/
+/applications/
+
+# Claude Code local settings (machine-specific)
+/.claude/
+
+# OS junk
+._*
+.DS_Store
+Thumbs.db
