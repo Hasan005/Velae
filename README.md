@@ -1,3 +1,23 @@
+## Two ways to use Velae Lite
+
+**▸ Try it live —** [hasan005.github.io/Velae](https://hasan005.github.io/Velae/)
+Open it in your browser, nothing to download. On **Chrome or Edge**, click
+*Connect folder* and your data auto-saves to a folder you pick — it never
+leaves your machine and never touches any server. (Velae has no backend; the
+page just runs locally in your browser.)
+
+**▸ Or download the portable version —** click the green **Code ▸ Download ZIP**
+button above, unzip it anywhere — a flash drive, an SSD, any folder — and
+double-click `index.html`. Same app, fully offline, no internet needed after
+download. Ideal for keeping your whole job search on a drive you carry with you.
+
+> **Browser note:** Chrome and Edge give the full experience (automatic
+> saving to your folder). Safari and Firefox work too, but save manually via
+> the *Save* / *Load file* buttons — use those to keep a `data.json` you move
+> in and out of the folder yourself.
+
+---
+
 # Velae Lite — Setup & Guide
 
 **Version 3.0**
