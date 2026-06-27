@@ -1,6 +1,6 @@
 ## Two ways to use Velae Lite
 
-**▸ Try it live —** [hasan005.github.io/Velae](https://hasan005.github.io/Velae/)
+**▸ Try it live —** [hasan005.github.io/Velae](https://hasansmr.github.io/Velae/)
 Open it in your browser, nothing to download. On **Chrome or Edge**, click
 *Connect folder* and your data auto-saves to a folder you pick — it never
 leaves your machine and never touches any server. (Velae has no backend; the
